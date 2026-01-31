@@ -8,18 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'John Doe | Full Stack Developer Portfolio',
-  description: 'Passionate full-stack developer with 5+ years of experience building scalable web applications. Explore my projects, experience, and skills.',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  openGraph: {
-    title: 'John Doe | Full Stack Developer',
-    description: 'Explore my portfolio of full-stack web applications and projects',
-    type: 'website',
-  },
+  title: 'My Portfolio',
+  description: 'My Portfolio',
   generator: 'HostFolio',
   icons: {
     icon: [
