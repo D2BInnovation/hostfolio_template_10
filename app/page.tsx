@@ -82,6 +82,16 @@ export default function Home() {
                 Contact
               </a>
             )}
+            {((data as any).resume || data.personal?.resume) && (
+              <a
+                href={(data as any).resume || data.personal.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Resume
+              </a>
+            )}
           </div>
           {data.personal?.email && (
             <a
