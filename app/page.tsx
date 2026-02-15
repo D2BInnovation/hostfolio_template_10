@@ -15,6 +15,7 @@ interface PortfolioData {
   experience: any;
   projects: any;
   contact: any;
+  resume?: string;
 }
 
 export default function Home() {
@@ -82,9 +83,9 @@ export default function Home() {
                 Contact
               </a>
             )}
-            {((data as any).resume || data.personal?.resume) && (
+            {(data.resume || data.personal?.resume) && (
               <a
-                href={(data as any).resume || data.personal.resume}
+                href={data.resume || data.personal.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
