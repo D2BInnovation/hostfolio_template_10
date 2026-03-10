@@ -24,7 +24,7 @@ export default function Home() {
 
   useEffect(() => {
     // Use imported data directly
-    setData(portfolioData);
+    setData(portfolioData as PortfolioData);
     setIsLoading(false);
   }, []);
 
